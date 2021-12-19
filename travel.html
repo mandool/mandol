@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>travel</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">boo</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <img src="img/BUildingpng.png" alt="" class="bg">
+
+        <!--
+        <video src="explore.mp4" muted loop autoplay></video>
+        -->
+        
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Manje Portfolio</h2>
+            <h3>exploring the world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minusque a.</p>
+            <a href="#">explore</a>
+        </div>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Me</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">content</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menutoggle=document.querySelector('.toggle')
+        const showcase=document.querySelector('.showcase')
+
+        menutoggle.addEventListener('click', () => {
+            menutoggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+
+    </script>
+
+    
+</body>
+</html>

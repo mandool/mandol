@@ -295,6 +295,11 @@ footer .container p {
         padding-top: 80px;
         transition: all 0.3s ease;
     }
+
+    .nav-list a:hover {
+        transform: none;
+        color: var(--white);
+    }
     
 
     .nav-list.active {

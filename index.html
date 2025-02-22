@@ -1,127 +1,328 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <section id="main">
-        <div class="container">
-            <nav>
-                <a href="https://mandool.github.io/mandori/"><img src="./img/mandori_logo.png" alt="" class="logo"></a>
-                <ul class="nav-list">
-                    <li><a href="https://foil-sofa-818.notion.site/1dd1597bbf444baf95d29ad738605888">Who I'am</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="https://blog.naver.com/manje8954">Blog</a></li>
-                </ul>
-                <!--menu hanburger-->
-                <img src="./img/menu.svg" alt="" class="menu-btn">
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf') format("truetype");
+    font-display: swap;
+}
 
-            </nav>
-
-        </div>
-    </section>
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 
 
-    <!--section2-->
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: inherit; /* 링크의 색상 제거 */
+}
 
-    <section id="project">
-        <div class="container">
-            <div class="section-title">
-                <h1>Project</h1>
-                <div class="line"></div>
-            </div>
+:root {
+    --primary : #000;
+    --secondary : #ffd936;
+    --white : #efefef;
 
-            <div class="projects">
-                <div class="project">
-                    <img src="./img/pra.png" alt="">
-                    <h3>Goldcoast Airline</h3>
-                    <p>Branding</p>
-                </div>
-                <div class="project">
-                    <img src="./img/pra.png" alt="">
-                    <h3>Unhwadang bakery</h3>
-                    <p>Branding</p>
-                </div>
-            </div>
+}   
 
-            <div class="projects">
-                <div class="project">
-                    <img src="./img/pra.png" alt="">
-                    <h3>Barcelona night tour</h3>
-                    <p>Detailpage design</p>
-                </div>
-                <div class="project">
-                    <img src="./img/pra.png" alt="">
-                    <h3>Direct purchase from Japan in Singapore</h3>
-                    <p>Promotion design</p>
-                </div>
-            </div>
 
-            <div class="projects">
-                <div class="project">
-                    <img src="./img/pra.png" alt="">
-                    <h3>Robofamilia</h3>
-                    <p>Branding</p>
-                </div>
-                <div class="project">
-                    <img src="./img/pra.png" alt="">
-                    <h3>Guam scuba diving activities</h3>
-                    <p>Detailpage design</p>
-                </div>
-            </div>
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
+  }
 
-            
-            <div class="projects">
-                <div class="project">
-                    <img src="./img/pra.png" alt="">
-                    <h3>Hualien Bus Tour</h3>
-                    <p>Detailpage design</p>
-                </div>
-                <div class="project">
-                    <img src="./img/pra.png" alt="">
-                    <h3>Tire Direct purchase</h3>
-                    <p>Promotion design</p>
-                </div>
-            </div>
 
-            <div class="section-title">
-            <div class="line"></div>
-            </div>
+body {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-style: normal;
+    color: var(--primary);
+    touch-action: pan-y;
+}
 
-        </div>
+#main {
+    background-image: url('../img/background_main.jpg');
+    min-height: 120vh;
+    background-position: bottom center;
+    background-size: cover;
+}
 
-    </section>
+
+.container {
+    max-width: 1600px;
+    padding: 16px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-list a {
+    color: var(--white);
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.nav-list a:hover {
+    color: #b5e9cb;
+    transform: translateY(-20px); 
+
+}
+
+.btn {
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.btn-primary {
+    border: none;
+    background : var(--secondary);
+    color(--primary);
+}
+
+
+
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+
+.section-title h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 52px;
+    font-family: "Archivo", serif;
+    font-weight: 500;
+
+}
+
+
+
+.section-title .line {
+    margin-top: 10px;
+    border-top: #000 solid 1px;
+}
+
+
+
+
+.projects {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap; /*반응형으로 1개로 변환*/
+}
+
+.project {
+    width: 770px;
+
+}
+
+.project img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.03) translateY(-20px); 
+}
+
+.project h3{
+    margin-top: 10px;
+    font-size: 24px;
+
+}
+
+
+
+footer .container{
+    display: flex;
+    padding: 40px 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container p {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 520px) {
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+      }
+      
+      #main {
+        background-attachment: fixed;
+        background-size: cover;
+      }
     
 
+    .menu-btn {
+        display: block;
+        
+    }
 
 
+    .nav-list {
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        right: -900px;
+        width: 100%;
+        height: 100vh;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    
 
-    <!--footer-->
-    <footer>
-        <div class="container">
-            <ul class="footer-links">
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-            </ul>
-            <img src="./img/logo-colored.png" alt="" class="footerlogo">
-            <p>Love nature</p>
-        </div>
-    </footer>
+    .nav-list.active {
+        right: 0;
+    }
 
 
-<script>
-    const navBtn = document.querySelector('.menu-btn')
-    const navList = document.querySelector('.nav-list')
+    .nav-list li{
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+    }
 
-    navBtn.addEventListener("click", function () {
-        navList.classList.toggle("active");
-    })
-</script>
+    .nav-list li a{
+        font-size: 60px;
+        font-family: 'Pretendard';
+        font-weight: 900;
+        font-style: normal;
+    }
 
-</body>
-</html>
+    #main {
+        background-image: url('../img/background_main_m.png');
+    }
+
+
+    #about-us .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer.container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

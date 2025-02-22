@@ -116,11 +116,13 @@
 
 }   
 
+
 body {
     font-family: 'Pretendard';
     font-weight: 300;
     font-style: normal;
     color: var(--primary);
+    overflow-x: hidden;
 }
 
 #main {

@@ -117,12 +117,19 @@
 }   
 
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
+  }
+
+
 body {
     font-family: 'Pretendard';
     font-weight: 300;
     font-style: normal;
     color: var(--primary);
-    overflow-x: hidden;
+    touch-action: pan-y;
 }
 
 #main {
@@ -245,22 +252,26 @@ nav {
 footer .container{
     display: flex;
     padding: 40px 16px;
-    justify-content: space-between;
     align-items: center;
-
+    justify-content: center;
 }
 
-.footer link {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    list-style: none;
+footer .container p {
+    text-align: center;
 }
 
 
 @media screen and (max-width: 520px) {
 
-
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+      }
+      
+      #main {
+        background-attachment: fixed;
+        background-size: cover;
+      }
     
 
     .menu-btn {

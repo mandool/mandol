@@ -319,6 +319,10 @@ footer .container p {
         background-image: url('../img/background_main_m.png');
     }
 
+    .project img:hover {
+        transform: scale(1.0) translateY(0);
+    }
+
 
     #about-us .container {
         flex-direction: column;

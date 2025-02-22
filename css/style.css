@@ -274,6 +274,10 @@ footer .container p {
       }
     
 
+    .logo {
+        width: 60%;
+    }      
+
     .menu-btn {
         display: block;
         

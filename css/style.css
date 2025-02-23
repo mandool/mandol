@@ -292,7 +292,7 @@ footer .container p {
     .nav-list {
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.911);
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -900px;
         width: 100%;

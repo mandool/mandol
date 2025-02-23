@@ -135,7 +135,7 @@ body {
 
 #main {
     background-image: url('../img/background_main.jpg');
-    min-height: 300vh;
+    min-height: 120vh;
     background-position: bottom center;
     background-size: cover;
 }
@@ -273,7 +273,7 @@ footer .container p {
       
       #main {
         background-image: url('../img/background_main_m.png');
-        min-height: 36vh;
+        min-height: 55vh;
         background-position: bottom center;
         background-size: cover;
       }

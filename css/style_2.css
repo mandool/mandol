@@ -134,14 +134,11 @@ body {
 }
 
 #main {
-    background-image: url('../img/background_main.jpg');
-    min-height: 120vh;
-    background-position: bottom center;
-    background-size: cover;
+    background-color: #000;
+    min-height: 5vh;
 }
 
 #lottie{
-    min-height: 120vh;
     background-position: bottom center;
     background-size: cover;
 }
@@ -208,52 +205,28 @@ nav {
     height: 25px;
 }
 
-
-.section-title h1 {
-    font-size: 40px;
-    text-align: left;
-    margin-top: 52px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-}
-
-
-
-.section-title .line {
-    margin-top: 10px;
-    border-top: #000 solid 1px;
+#project .container {
+    max-width: 1920px;
+    margin: auto;
 }
 
 
 
 .projects {
-    margin-top: 40px;
     display: flex;
     justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap; /*반응형으로 1개로 변환*/
 }
 
 .project {
-    width: 770px;
+    width: 1920px;
 
 }
 
 .project img {
     max-width: 100%;
-    transition: transform 0.3s ease;
 }
 
-.project img:hover {
-    transform: scale(1.03) translateY(-4px); 
-}
 
-.project h3{
-    margin-top: 10px;
-    font-size: 24px;
-}
 
 
 
@@ -288,7 +261,7 @@ footer .container p {
 
     .menu-btn {
         display: block;
-        
+        z-index: 11; /* Ensure it's above the nav-list */
     }
 
 
@@ -302,6 +275,7 @@ footer .container p {
         height: 100vh;
         padding-top: 80px;
         transition: all 0.3s ease;
+        z-index: 11; /* Ensure it's above the nav-list */
     }
 
     .nav-list a:hover {

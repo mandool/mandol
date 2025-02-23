@@ -251,7 +251,6 @@ nav {
 }
 
 
-
 footer .container{
     display: flex;
     padding: 40px 16px;
@@ -301,6 +300,8 @@ footer .container p {
         transition: all 0.3s ease;
     }
 
+    
+
     .nav-list a:hover {
         transform: none;
         color: var(--white);
@@ -328,6 +329,21 @@ footer .container p {
     #main {
         background-image: url('../img/background_main_m.png');
     }
+
+    .section-title h1 {
+        font-size: 24px;
+    
+    }
+
+    .projects {
+        margin-top: 10px;
+    }
+
+    .projects .project {
+        margin-bottom: 30px;
+    }
+    
+    
 
     .project img:hover {
         transform: scale(1.0) translateY(0);

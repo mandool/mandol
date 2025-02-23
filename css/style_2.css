@@ -210,7 +210,33 @@ nav {
     margin: auto;
 }
 
+.container .overview {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 5%;
+}
 
+.container .overview .detail h3{
+    font-size: 40px;
+    text-align: left;
+    margin-top: 52px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-style: normal;
+    color: var(--primary);
+}
+
+
+.container .overview .detail p {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 32px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -1px;
+    line-height: 1.3;
+}
 
 .projects {
     display: flex;
@@ -308,6 +334,16 @@ footer .container p {
 
     .project img:hover {
         transform: scale(1.0) translateY(0);
+    }
+
+    .container .overview .detail h3 {
+        font-size: 18px;
+    }
+
+    .container .overview .detail p {
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 1.5;
     }
 
 

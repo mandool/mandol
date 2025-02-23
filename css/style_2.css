@@ -294,7 +294,7 @@ footer .container p {
     .nav-list {
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.911);
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -900px;
         width: 100%;
@@ -302,6 +302,7 @@ footer .container p {
         padding-top: 80px;
         transition: all 0.3s ease;
         z-index: 11; /* Ensure it's above the nav-list */
+        
     }
 
     .nav-list a:hover {

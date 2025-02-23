@@ -337,6 +337,7 @@ footer .container p {
     }
 
     .container .overview .detail h3 {
+        margin-top: 20px;
         font-size: 18px;
     }
 

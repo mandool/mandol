@@ -279,7 +279,13 @@ footer .container p {
         background-attachment: fixed;
         background-size: cover;
       }
-    
+
+      .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+      }
 
     .logo {
         width: 60%;
@@ -347,6 +353,17 @@ footer .container p {
         font-size: 12px;
         line-height: 1.5;
     }
+
+    .projects .project {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      
+      .projects .project img {
+        width: 100%;
+        max-width: 100%;
+      }
 
 
     #about-us .container {

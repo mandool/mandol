@@ -135,7 +135,7 @@ body {
 
 #main {
     background-image: url('../img/background_main.jpg');
-    min-height: 120vh;
+    min-height: 300vh;
     background-position: bottom center;
     background-size: cover;
 }

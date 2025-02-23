@@ -140,11 +140,6 @@ body {
     background-size: cover;
 }
 
-#lottie{
-    min-height: 120vh;
-    background-position: bottom center;
-    background-size: cover;
-}
 
 
 .container {
@@ -277,7 +272,9 @@ footer .container p {
       }
       
       #main {
-        background-attachment: fixed;
+        background-image: url('../img/background_main_m.png');
+        min-height: 36vh;
+        background-position: bottom center;
         background-size: cover;
       }
     

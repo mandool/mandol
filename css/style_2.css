@@ -134,7 +134,7 @@ body {
 }
 
 #main {
-    background-color: rgba(0, 0, 0, 0.87);
+    background-color: rgba(0, 0, 0, 0.911);
     min-height: 5vh;
 }
 
@@ -267,7 +267,7 @@ footer .container p {
 
     .nav-list {
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.664);
+        background-color: rgba(0, 0, 0, 0.911);
         position: absolute;
         top: 0;
         right: -900px;

@@ -169,7 +169,7 @@ nav {
 }
 
 .nav-list a:hover {
-    color: #b5e9cb;
+    color: #0caadb;
     transform: translateY(-20px); 
 
 }
@@ -210,6 +210,10 @@ nav {
     margin: auto;
 }
 
+.project #lottie {
+        margin-top: 25px;
+}
+
 .container .overview {
     display: flex;
     margin: 0 auto;
@@ -220,6 +224,16 @@ nav {
     font-size: 40px;
     text-align: left;
     margin-top: 52px;
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-style: normal;
+    color: var(--primary);
+}
+
+.container .overview .detail h4{
+    font-size: 28px;
+    text-align: left;
+    margin-top: 48px;
     font-family: 'Pretendard';
     font-weight: 800;
     font-style: normal;
@@ -238,6 +252,18 @@ nav {
     line-height: 1.5;
 }
 
+.container .overview .detail .contribute {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 16px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -1px;
+    line-height: 1.5;
+    margin-bottom: 45px;
+}
+
 .projects {
     display: flex;
     justify-content: center;
@@ -250,8 +276,10 @@ nav {
 
 .project img {
     max-width: 100%;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
 
 
 
@@ -346,6 +374,11 @@ footer .container p {
         margin-top: 12px;
         font-size: 12px;
         line-height: 1.5;
+    }
+
+    .container .overview .detail h4 {
+        margin-top: 12px;
+        font-size: 16px;
     }
 
 

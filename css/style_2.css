@@ -138,6 +138,8 @@ body {
     min-height: 5vh;
 }
 
+
+
 #lottie{
     background-position: bottom center;
     background-size: cover;
@@ -372,7 +374,7 @@ footer .container p {
 
     .container .overview .detail p {
         margin-top: 12px;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.5;
     }
 

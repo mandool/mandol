@@ -381,6 +381,11 @@ footer .container p {
         font-size: 16px;
     }
 
+    .container .overview .detail .contribute {
+        font-size: 12px;
+
+    }
+
 
     #about-us .container {
         flex-direction: column;
